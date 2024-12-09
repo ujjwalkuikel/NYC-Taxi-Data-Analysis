@@ -14,11 +14,22 @@ TLC Trip data is used to implement the regression, classification and forecast.
 For classification, payment_type categorical column is used in the project. The payment_type column include 6 categorical records as:
 
 1= Credit card
+
+
 2= Cash
+
+
 3= No charge
+
+
 4= Dispute
+
+
 5= Unknown
+
+
 6= Voided trip
+
 
 However, for the models used for classification expect the record to be indexed from 0. So, the record is pre-processed in such a way that column data starts from 0 to 5. The models also expect the record to not have the empty value and NaN value so it is solved on the pre-processing section.
 
