@@ -1,13 +1,15 @@
-# TLC Trip Data 
+# TLC Trip Data
 
 # Prastut Dahal, Dipika Bogati, Ujjwal Kuikel
+
+## Project Introduction
 
 The data originates from the NYC Taxi and Limousine Commission (TLC) and is submitted by authorized technology providers under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP) and it claims that it enforces measures to maintain, as much as possible, the data's completeness and reliability. This project focuses on analyzing Yellow Taxi trip data from January to June 2024 which is total 2.6 million rows. The dataset provides comprehensive records including pick-up and drop-off dates and times, locations, trip distances, itemized fare components, rate types, payment methods, and passenger counts as reported by drivers.
 
 
-## Project Introduction
+## Project Details
 
-TLC Trip data is used to implement the regression, classification and forecast. 
+TLC Trip data is used to implement the regression, classification and forecast.
 
 For classification, payment_type categorical column is used in the project. The payment_type column include 6 categorical records as:
 
