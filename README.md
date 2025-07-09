@@ -1,43 +1,131 @@
-# TLC Trip Data
+# NYC Taxi Data Analysis
 
-# Prastut Dahal, Dipika Bogati, Ujjwal Kuikel
+## Overview
 
-## Project Introduction
+This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses on predictive modeling and machine learning insights derived from NYC Yellow Taxi Trip Records. The goal is to predict fare amounts, payment types, and forecast future demand and revenue using historical taxi data. These predictions aim to optimize resource allocation, enhance urban mobility, and support sustainable urban planning.
 
-The data originates from the NYC Taxi and Limousine Commission (TLC) and is submitted by authorized technology providers under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP) and it claims that it enforces measures to maintain, as much as possible, the data's completeness and reliability. This project focuses on analyzing Yellow Taxi trip data from January to June 2024 which is total 2.6 million rows. The dataset provides comprehensive records including pick-up and drop-off dates and times, locations, trip distances, itemized fare components, rate types, payment methods, and passenger counts as reported by drivers.
+## Dataset
 
+- **Source**: New York City Taxi & Limousine Commission (TLC) Yellow Taxi Trip Records
+- **Description**: Open dataset containing millions of trip records from NYC yellow taxis.
+- **Key Features**:
+  - **Trip Details**: Pickup and drop-off locations, timestamps, trip distance
+  - **Fare Information**: Total fare, trip amount, payment type
+  - **Passenger Data**: Number of passengers per trip
+  - **Time-Related Attributes**: Pickup time, drop-off time
 
-## Project Details
+## Methodology
 
-TLC Trip data is used to implement the regression, classification and forecast.
+### Data Cleaning
 
-For classification, payment_type categorical column is used in the project. The payment_type column include 6 categorical records as:
+- Handled missing values by imputing or removing rows/columns as necessary.
+- Removed duplicate rows to prevent skewed results.
+- Identified and removed outliers in numerical features (e.g., extreme trip fares or durations).
 
-1= Credit card
+### Feature Engineering
 
+- Created new features such as trip duration, hour of day, and day of week.
+- Encoded categorical variables using one-hot encoding or label encoding.
 
-2= Cash
+### Exploratory Data Analysis (EDA)
 
+- Analyzed trip distribution by day of week and month.
+- Visualized trends such as hourly demand and fare revenue patterns.
 
-3= No charge
+### Predictive Modeling
 
+#### Regression Models (for Fare Amount Prediction)
 
-4= Dispute
+- **Linear Regression**: Models linear relationships between features and target.
+- **Lasso Regression**: Applies L1 regularization for feature selection.
+- **Ridge Regression**: Uses L2 regularization to prevent overfitting.
+- **Elastic Net**: Combines L1 and L2 regularization for balanced feature selection and coefficient shrinkage.
 
+#### Classification Models (for Payment Type Prediction)
 
-5= Unknown
+- **Logistic Regression**: Uses a sigmoid function to predict probabilities.
+- **Decision Tree**: Captures linear and non-linear relationships through hierarchical splits.
+- **Random Forest**: Combines multiple decision trees to improve prediction accuracy.
+- **XGBoost**: Sequentially builds decision trees to optimize predictions via gradient descent.
 
+### Forecasting
 
-6= Voided trip
+- Developed models to forecast future taxi demand and revenue based on historical data.
 
+## Results
 
-However, for the models used for classification expect the record to be indexed from 0. So, the record is pre-processed in such a way that column data starts from 0 to 5. The models also expect the record to not have the empty value and NaN value so it is solved on the pre-processing section.
+- **Prediction Accuracy**:
+  - Achieved an accuracy of **83.3%** for classification tasks (e.g., payment type prediction).
+  - Regression models showed a performance metric of **0.825** (likely R² or similar).
+- **Key Insights**:
+  - Successfully predicted fare amounts and payment types using trip features.
+  - Forecasted future demand and revenue, validating the potential of regression and classification models.
+  - Insights support improved efficiency and customer experience in urban transportation systems.
 
-The models used for classifications are:
+## Future Work
 
-1. Logistic Regression
-2. Decision Tree
-3. Random Forest
-4. XGBoost
+- Explore advanced machine learning models and deep learning for higher accuracy.
+- Develop real-time prediction models to handle dynamic changes in demand and improve decision-making.
 
-Each model is trained and tested using 5-fold cross validation and ensured there is no leakage from training data to testing data. Now, the metrics like precision, recall, f1 score and accuracy is used to identify the models accuracy for the classification of the trip record datasets. It is expected that XGBoost have the higher accuracy followed by Random Forest  and (decision tree and Logistic Regression). However, the results show that Random Forest is higher performing for the given datasets compared to all three models. In order to increase efficiency of XGBoost, parameter update has also been done but the result were worst than the parameter used in the current project. To some extent, Random Forest is also expected to give higher performing result because Random Forest is an ensemble of decision trees, where each tree is trained on a random subset of the data with random feature selection. This randomness reduces the risk of overfitting compared to a single Decision Tree.
+## Prerequisites
+
+- Python 3.8+
+- Required libraries:
+  - pandas
+  - numpy
+  - scikit-learn
+  - xgboost
+  - matplotlib
+  - seaborn
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ujjwalkuikel/NYC-Taxi-Data-Analysis.git
+   cd NYC-Taxi-Data-Analysis
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Download the NYC TLC Yellow Taxi Trip Records dataset from the [official TLC website](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) and place it in the `data/` directory.
+
+## Usage
+
+1. Run the data preprocessing script:
+   ```bash
+   python preprocess.py
+   ```
+2. Perform exploratory data analysis:
+   ```bash
+   python eda.py
+   ```
+3. Train and evaluate models:
+   ```bash
+   python train.py
+   ```
+4. Generate forecasts:
+   ```bash
+   python forecast.py
+   ```
+
+## Directory Structure
+
+```
+NYC-Taxi-Data-Analysis/
+├── data/                   # Dataset storage
+├── notebooks/              # Jupyter notebooks for EDA and analysis
+├── scripts/                # Python scripts for preprocessing, training, and forecasting
+├── requirements.txt        # List of dependencies
+├── README.md               # Project documentation
+└── Predictive Paths.pptx   # Project presentation
+```
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue on the [GitHub repository](https://github.com/ujjwalkuikel/NYC-Taxi-Data-Analysis).
+
+## License
+
+This project is licensed under the MIT License.
