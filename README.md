@@ -22,6 +22,8 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
   - **Passenger Data**: Number of passengers per trip
   - **Time-Related Attributes**: Pickup time, drop-off time
 
+![Questions](assets/Slide4.PNG)
+
 ![Dataset](assets/Slide6.PNG)
 
 ## Methodology
@@ -58,27 +60,28 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - **Ridge Regression**: Uses L2 regularization to prevent overfitting.
 - **Elastic Net**: Combines L1 and L2 regularization for balanced feature selection and coefficient shrinkage.
 
+![Model Performance](assets/Slide12.PNG)
+![Regression Models](assets/Slide13.PNG)
+
 #### Classification Models (for Payment Type Prediction)
 
 - **Logistic Regression**: Uses a sigmoid function to predict probabilities.
 - **Decision Tree**: Captures linear and non-linear relationships through hierarchical splits.
 - **Random Forest**: Combines multiple decision trees to improve prediction accuracy.
 - **XGBoost**: Sequentially builds decision trees to optimize predictions via gradient descent.
-
-![Model Performance](assets/Slide12.PNG)
-![Model Accuracy](assets/Slide15.PNG)
-![Precision](assets/Slide17.PNG)
-![Recall](assets/Slide18.PNG)
-![F1 Score](assets/Slide19.PNG)
+  ![Model Comparison](assets/Slide14.PNG)
+  ![Model Accuracy](assets/Slide15.PNG)
+  ![Precision](assets/Slide17.PNG)
+  ![Recall](assets/Slide18.PNG)
 
 ### Forecasting
 
 - Developed models to forecast future taxi demand and revenue based on historical data.
-
-![Actual vs Forecasted Fare Revenue](assets/Slide20.PNG)
-![Revenue Comparison](assets/Slide21.PNG)
-![Taxi Demand](assets/Slide22.PNG)
-![Actual vs Forecasted Taxi Demand](assets/Slide23.PNG)
+  ![F1 Score](assets/Slide19.PNG)
+  ![Actual vs Forecasted Fare Revenue](assets/Slide20.PNG)
+  ![Revenue Comparison](assets/Slide21.PNG)
+  ![Taxi Demand](assets/Slide22.PNG)
+  ![Actual vs Forecasted Taxi Demand](assets/Slide23.PNG)
 
 ## Results
 
