@@ -8,9 +8,9 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 
 ### Presentation Preview
 
-![Title Slide](assets/slide1.png)
-![Project Overview](assets/slide2.png)
-![Introduction](assets/slide3.png)
+![Title Slide](assets/Slide1.png)
+![Project Overview](assets/Slide2.png)
+![Introduction](assets/Slide3.png)
 
 ## Dataset
 
@@ -22,7 +22,7 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
   - **Passenger Data**: Number of passengers per trip
   - **Time-Related Attributes**: Pickup time, drop-off time
 
-![Dataset](assets/slide6.png)
+![Dataset](assets/Slide6.png)
 
 ## Methodology
 
@@ -37,17 +37,17 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - Created new features such as trip duration, hour of day, and day of week.
 - Encoded categorical variables using one-hot encoding or label encoding.
 
-![Methodology](assets/slide5.png)
-![Data Preprocessing](assets/slide8.png)
+![Methodology](assets/Slide5.png)
+![Data Preprocessing](assets/Slide8.png)
 
 ### Exploratory Data Analysis (EDA)
 
 - Analyzed trip distribution by day of week and month.
 - Visualized trends such as hourly demand and fare revenue patterns.
 
-![EDA Overview](assets/slide9.png)
-![Trip Distribution by Day of Week](assets/slide10.png)
-![Trips by Month](assets/slide11.png)
+![EDA Overview](assets/Slide9.png)
+![Trip Distribution by Day of Week](assets/Slide10.png)
+![Trips by Month](assets/Slide11.png)
 
 ### Predictive Modeling
 
@@ -65,20 +65,20 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - **Random Forest**: Combines multiple decision trees to improve prediction accuracy.
 - **XGBoost**: Sequentially builds decision trees to optimize predictions via gradient descent.
 
-![Model Performance](assets/slide12.png)
-![Model Accuracy](assets/slide15.png)
-![Precision](assets/slide17.png)
-![Recall](assets/slide18.png)
-![F1 Score](assets/slide19.png)
+![Model Performance](assets/Slide12.png)
+![Model Accuracy](assets/Slide15.png)
+![Precision](assets/Slide17.png)
+![Recall](assets/Slide18.png)
+![F1 Score](assets/Slide19.png)
 
 ### Forecasting
 
 - Developed models to forecast future taxi demand and revenue based on historical data.
 
-![Actual vs Forecasted Fare Revenue](assets/slide20.png)
-![Revenue Comparison](assets/slide21.png)
-![Taxi Demand](assets/slide22.png)
-![Actual vs Forecasted Taxi Demand](assets/slide23.png)
+![Actual vs Forecasted Fare Revenue](assets/Slide20.png)
+![Revenue Comparison](assets/Slide21.png)
+![Taxi Demand](assets/Slide22.png)
+![Actual vs Forecasted Taxi Demand](assets/Slide23.png)
 
 ## Results
 
@@ -95,7 +95,7 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - Explore advanced machine learning models and deep learning for higher accuracy.
 - Develop real-time prediction models to handle dynamic changes in demand and improve decision-making.
 
-![Conclusion](assets/slide24.png)
+![Conclusion](assets/Slide24.png)
 
 ## Prerequisites
 
@@ -121,25 +121,7 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
    ```
 3. Download the NYC TLC Yellow Taxi Trip Records dataset from the [official TLC website](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) and place it in the `data/` directory.
 
-## Usage
-
-1. Run the data preprocessing script:
-   ```bash
-   python preprocess.py
-   ```
-2. Perform exploratory data analysis:
-   ```bash
-   python eda.py
-   ```
-3. Train and evaluate models:
-   ```bash
-   python train.py
-   ```
-4. Generate forecasts:
-   ```bash
-   python forecast.py
-   ```
-
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE.
+.
