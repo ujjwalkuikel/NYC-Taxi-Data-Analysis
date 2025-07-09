@@ -2,7 +2,15 @@
 
 ## Overview
 
-This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses on predictive modeling and machine learning insights derived from NYC Yellow Taxi Trip Records. The goal is to predict fare amounts, payment types, and forecast future demand and revenue using historical taxi data. These predictions aim to optimize resource allocation, enhance urban mobility, and support sustainable urban planning.
+This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses on predictive modeling and machine learning insights derived from NYC Yellow Taxi Trip Records. The goal is to predict fare amounts, payment types, and forecast future demand and revenue using historical taxi data. These predictions aim to optimize resource allocation, enhance urban mobility, and support sustainable urban planning.
+
+[View the full project presentation](Predictive_Paths.pdf)
+
+### Presentation Preview
+
+![Title Slide](assets/slide1.png)
+![Project Overview](assets/slide2.png)
+![Introduction](assets/slide3.png)
 
 ## Dataset
 
@@ -13,6 +21,8 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses 
   - **Fare Information**: Total fare, trip amount, payment type
   - **Passenger Data**: Number of passengers per trip
   - **Time-Related Attributes**: Pickup time, drop-off time
+
+![Dataset](assets/slide6.png)
 
 ## Methodology
 
@@ -27,10 +37,17 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses 
 - Created new features such as trip duration, hour of day, and day of week.
 - Encoded categorical variables using one-hot encoding or label encoding.
 
+![Methodology](assets/slide5.png)
+![Data Preprocessing](assets/slide8.png)
+
 ### Exploratory Data Analysis (EDA)
 
 - Analyzed trip distribution by day of week and month.
 - Visualized trends such as hourly demand and fare revenue patterns.
+
+![EDA Overview](assets/slide9.png)
+![Trip Distribution by Day of Week](assets/slide10.png)
+![Trips by Month](assets/slide11.png)
 
 ### Predictive Modeling
 
@@ -48,9 +65,20 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses 
 - **Random Forest**: Combines multiple decision trees to improve prediction accuracy.
 - **XGBoost**: Sequentially builds decision trees to optimize predictions via gradient descent.
 
+![Model Performance](assets/slide12.png)
+![Model Accuracy](assets/slide15.png)
+![Precision](assets/slide17.png)
+![Recall](assets/slide18.png)
+![F1 Score](assets/slide19.png)
+
 ### Forecasting
 
 - Developed models to forecast future taxi demand and revenue based on historical data.
+
+![Actual vs Forecasted Fare Revenue](assets/slide20.png)
+![Revenue Comparison](assets/slide21.png)
+![Taxi Demand](assets/slide22.png)
+![Actual vs Forecasted Taxi Demand](assets/slide23.png)
 
 ## Results
 
@@ -66,6 +94,8 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses 
 
 - Explore advanced machine learning models and deep learning for higher accuracy.
 - Develop real-time prediction models to handle dynamic changes in demand and improve decision-making.
+
+![Conclusion](assets/slide24.png)
 
 ## Prerequisites
 
@@ -109,22 +139,6 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati focuses 
    ```bash
    python forecast.py
    ```
-
-## Directory Structure
-
-```
-NYC-Taxi-Data-Analysis/
-├── data/                   # Dataset storage
-├── notebooks/              # Jupyter notebooks for EDA and analysis
-├── scripts/                # Python scripts for preprocessing, training, and forecasting
-├── requirements.txt        # List of dependencies
-├── README.md               # Project documentation
-└── Predictive Paths.pptx   # Project presentation
-```
-
-## Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue on the [GitHub repository](https://github.com/ujjwalkuikel/NYC-Taxi-Data-Analysis).
 
 ## License
 
