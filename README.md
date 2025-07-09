@@ -8,9 +8,9 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 
 ### Presentation Preview
 
-![Title Slide](assets/Slide1.png)
-![Project Overview](assets/Slide2.png)
-![Introduction](assets/Slide3.png)
+![Title Slide](assets/Slide1.PNG)
+![Project Overview](assets/Slide2.PNG)
+![Introduction](assets/Slide3.PNG)
 
 ## Dataset
 
@@ -22,7 +22,7 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
   - **Passenger Data**: Number of passengers per trip
   - **Time-Related Attributes**: Pickup time, drop-off time
 
-![Dataset](assets/Slide6.png)
+![Dataset](assets/Slide6.PNG)
 
 ## Methodology
 
@@ -37,17 +37,17 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - Created new features such as trip duration, hour of day, and day of week.
 - Encoded categorical variables using one-hot encoding or label encoding.
 
-![Methodology](assets/Slide5.png)
-![Data Preprocessing](assets/Slide8.png)
+![Methodology](assets/Slide5.PNG)
+![Data Preprocessing](assets/Slide8.PNG)
 
 ### Exploratory Data Analysis (EDA)
 
 - Analyzed trip distribution by day of week and month.
 - Visualized trends such as hourly demand and fare revenue patterns.
 
-![EDA Overview](assets/Slide9.png)
-![Trip Distribution by Day of Week](assets/Slide10.png)
-![Trips by Month](assets/Slide11.png)
+![EDA Overview](assets/Slide9.PNG)
+![Trip Distribution by Day of Week](assets/Slide10.PNG)
+![Trips by Month](assets/Slide11.PNG)
 
 ### Predictive Modeling
 
@@ -65,20 +65,20 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - **Random Forest**: Combines multiple decision trees to improve prediction accuracy.
 - **XGBoost**: Sequentially builds decision trees to optimize predictions via gradient descent.
 
-![Model Performance](assets/Slide12.png)
-![Model Accuracy](assets/Slide15.png)
-![Precision](assets/Slide17.png)
-![Recall](assets/Slide18.png)
-![F1 Score](assets/Slide19.png)
+![Model Performance](assets/Slide12.PNG)
+![Model Accuracy](assets/Slide15.PNG)
+![Precision](assets/Slide17.PNG)
+![Recall](assets/Slide18.PNG)
+![F1 Score](assets/Slide19.PNG)
 
 ### Forecasting
 
 - Developed models to forecast future taxi demand and revenue based on historical data.
 
-![Actual vs Forecasted Fare Revenue](assets/Slide20.png)
-![Revenue Comparison](assets/Slide21.png)
-![Taxi Demand](assets/Slide22.png)
-![Actual vs Forecasted Taxi Demand](assets/Slide23.png)
+![Actual vs Forecasted Fare Revenue](assets/Slide20.PNG)
+![Revenue Comparison](assets/Slide21.PNG)
+![Taxi Demand](assets/Slide22.PNG)
+![Actual vs Forecasted Taxi Demand](assets/Slide23.PNG)
 
 ## Results
 
@@ -95,7 +95,7 @@ This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses
 - Explore advanced machine learning models and deep learning for higher accuracy.
 - Develop real-time prediction models to handle dynamic changes in demand and improve decision-making.
 
-![Conclusion](assets/Slide24.png)
+![Conclusion](assets/Slide24.PNG)
 
 ## Prerequisites
 
