@@ -4,7 +4,7 @@
 
 This project, developed by Me (Ujjwal), Prastut Dahal and Dipika Bogati, focuses on predictive modeling and machine learning insights derived from NYC Yellow Taxi Trip Records. The goal is to predict fare amounts, payment types, and forecast future demand and revenue using historical taxi data. These predictions aim to optimize resource allocation, enhance urban mobility, and support sustainable urban planning.
 
-[View the full project presentation](Predictive_Paths.pdf)
+[View the full project presentation](Project_Description.pdf)
 
 ### Presentation Preview
 
